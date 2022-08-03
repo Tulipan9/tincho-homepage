@@ -6,24 +6,24 @@ import styled from "@emotion/styled";
 const LogoBox = styled.span`
     font-weight: bold;
     font-size: 18px;
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     height: 30%;
     line-height: 20px;
     padding: 10px;
 
-    &:hover {
+    &:hover img{
         transform: rotate(20deg);
     }
 `
 
 const Logo = () => {
-    const OctopusImg = `/images/octopus${useColorModeValue('', '-dark')}.png`
+    const LogoImg = `/images/Logo_${useColorModeValue('', '-dark')}.png`
     return (
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={OctopusImg} alt="logo" width="20" height="20" />
+                    <Image src={LogoImg} alt="logo" width="20" height="20" />
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c'

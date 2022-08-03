@@ -49,7 +49,29 @@ const Navbar = props => {
                         <Logo />
                     </Heading>
                 </Flex>
-
+                <Stack
+                    direction={{ base: 'column', md: 'row' }}
+                    display={{ base: 'none', md: 'flex' }}
+                    width={{ base: 'full', md: 'auto' }}
+                    alignItems="center"
+                    flexGrow={1}
+                    mt={{ base: 4, md: 0 }}
+                >
+                    <LinkItem href="/works" path={path}>
+                        Works
+                    </LinkItem>
+                    <LinkItem href="/about" path={path}>
+                        About
+                    </LinkItem>
+                </Stack>
+                <Box flex={1} align="right">
+                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                        <Menu>
+                            <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
+                            <MenuList 
+                        </Menu>
+                    </Box>
+                </Box>
             </Container>
         </Box>
     )
