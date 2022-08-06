@@ -68,7 +68,15 @@ const Navbar = props => {
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
-                            <MenuList 
+                            <MenuList>
+                                <NextLink href="/works" passHref>
+                                    <MenuItem as={Link}>works</MenuItem>
+                                </NextLink>
+                                <NextLink href="/about" passHref>
+                                    <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+                                <MenuItem as={Link} href="https://github.com/Tulipan9/tincho-homepage">View Source</MenuItem>
+                            </MenuList>
                         </Menu>
                     </Box>
                 </Box>
