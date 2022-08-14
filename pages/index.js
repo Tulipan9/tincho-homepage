@@ -49,8 +49,8 @@ const Page = () => {
                     During the last few years, I have brought my passion for technology and business to every position I have held.
                     When I am not at work, I spend my time looking for new ventures of my own and training in new technologies.
                     {' '}
-                    <NextLink href="/works/inkdrop">
-                        <Link>Inkdrop</Link>
+                    <NextLink href="/works/flutterApp">
+                        <Link>flutterApp</Link>
                     </NextLink>
                     .
                 </Paragraph>
