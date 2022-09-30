@@ -1,8 +1,9 @@
-import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 import thumbCalcApp from "../public/images/calcApp.png";
-import thumbFlutterApp from "../public/images/flutterApp.png";
+import thumbMifinanzas from "../public/images/MF.png";
+import thumbHomePage from "../public/images/home.png";
 import Layout from "../components/layouts/article";
 
 
@@ -20,10 +21,15 @@ const works = () => {
                         </WorkGridItem>
                     </Section>
                     <Section>
-                        <WorkGridItem id="flutterApp" title="FlutterApp" thumbnail={thumbFlutterApp}>
-                            coming soon...
+                        <WorkGridItem id="MiFinanzas" title="Mifinanzas" thumbnail={thumbMifinanzas}>
+                            Investment application made in Angular and .Net
                         </WorkGridItem>
                     </Section>
+                    <Section>
+                        <WorkGridItem id="HomePage" title="HomePage" thumbnail={thumbHomePage}>
+                            biography and portfolio made in next.js
+                        </WorkGridItem>
+                    </Section>T
                 </SimpleGrid>
             </Container>
         </Layout>
